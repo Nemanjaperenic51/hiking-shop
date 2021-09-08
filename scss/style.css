@@ -183,6 +183,12 @@ header hgroup button:hover {
 .items .item {
   border: 1px solid #eeeeee;
   padding: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.items .item:hover {
+  border: 1px solid #3a8bcd;
 }
 
 .items .price {
@@ -263,11 +269,65 @@ footer .icon a {
   color: #3a8bcd;
   display: inline-block;
   margin-left: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .icon a:hover {
+  -webkit-transform: rotatey(360deg);
+          transform: rotatey(360deg);
 }
 
 footer article:last-child {
   text-align: center;
   padding: 20px;
   font-size: 1.6rem;
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+                                       P R O D U C T S
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+.product {
+  padding: 100px 0;
+}
+
+.product .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22%;
+          flex: 0 0 22%;
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.product .container article:hover {
+  border: 1px solid #3a8bcd;
+}
+
+.product .container article img {
+  width: 100%;
+}
+
+.product .container article .price {
+  color: #3a8bcd;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */

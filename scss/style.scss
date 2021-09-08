@@ -143,6 +143,11 @@ header {
     .item {
         border: 1px solid $borders;
         padding: 10px;
+        transition: $transition;
+
+        &:hover {
+            border: 1px solid $primary;
+        }
     }
     .price {
         color: $primary;
@@ -221,6 +226,11 @@ footer {
            color: $primary;
            display: inline-block;
            margin-left: 20px;
+           transition: $transition;
+
+           &:hover {
+               transform: rotatey(360deg);
+           }
        }
    }
 
@@ -232,3 +242,44 @@ footer {
        }
    }
 }
+
+
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+                                       P R O D U C T S
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+
+
+.product {
+    padding: 100px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        article {
+            flex: 0 0 22%;
+            border: 1px solid $borders;
+            padding: 10px;
+            transition: $transition;
+            margin: 20px 0;
+            padding: 20px;
+            &:hover {
+                border: 1px solid $primary;
+            }
+
+            img {
+                width: 100%;
+            }
+            .price {
+                color: $primary;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
