@@ -330,4 +330,79 @@ footer article:last-child {
   color: #3a8bcd;
   font-size: 1.1rem;
 }
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+                                       A B O U T
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+.about {
+  padding: 70px 0;
+}
+
+.about .row {
+  max-width: 1140px;
+  margin: auto;
+  padding: 35px 0;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .container article:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.about .container article:first-child img {
+  width: 100%;
+}
+
+.about .container article:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 56%;
+          flex: 0 0 56%;
+  line-height: 1.8;
+}
+
+.about .container article:last-child hr {
+  margin: 40px 0;
+}
+
+.about .container article:last-child .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .container article:last-child .icon p {
+  font-size: 1.2rem;
+}
+
+.about .container article:last-child .icon a {
+  font-size: 2rem;
+  margin-left: 20px;
+  color: #3a8bcd;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about .container article:last-child .icon a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 /*# sourceMappingURL=style.css.map */
