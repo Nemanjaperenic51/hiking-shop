@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 **********************************************************************************************************
 *********************************************************************************************************/
 nav {
-  background: #f6f6f6;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,6 +94,12 @@ nav ul li a {
   color: #4a4a4a;
   text-transform: uppercase;
   font-size: 1.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #3a8bcd;
 }
 
 /*********************************************************************************************************
@@ -177,5 +183,91 @@ header hgroup button:hover {
 .items .item {
   border: 1px solid #eeeeee;
   padding: 10px;
+}
+
+.items .price {
+  color: #3a8bcd;
+  font-size: 1.1rem;
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+                                        S U B S C R I B E
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+.subscribe {
+  text-align: center;
+  padding: 80px 0;
+  background: #3a8bcd;
+}
+
+.subscribe .container {
+  max-width: 800px !important;
+}
+
+.subscribe .container h1 {
+  color: #4a4a4a;
+  font-size: 2rem;
+}
+
+.subscribe .container p {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 30px 0;
+}
+
+.subscribe .container form input[type="text"] {
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.subscribe .container form input[type="submit"] {
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.subscribe .container form input[type="submit"]:hover {
+  background: #eeeeee;
+}
+
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+                                        F O O T E R
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+footer {
+  padding: 60px 0;
+}
+
+footer .icon {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .icon a {
+  font-size: 2.5rem;
+  color: #3a8bcd;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer article:last-child {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */
