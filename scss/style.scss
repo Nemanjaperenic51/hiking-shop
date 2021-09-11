@@ -45,6 +45,13 @@ nav {
         li {
             margin-left: 40px;
             padding: 10px 0 10px 0;
+            @media (max-width: 500px) {
+                margin-left: 20px;
+            }
+            @media (max-width: 400px) {
+                margin-left: 12px;
+                
+            }
             a {
                 text-decoration: none;
                 color: $text;
@@ -54,6 +61,10 @@ nav {
 
                 &:hover {
                     color: $primary;
+                }
+                @media (max-width: 400px) {
+                    font-size: 1.1rem;
+                    
                 }
             }
         }
@@ -75,6 +86,16 @@ header {
     background-position: top;
     height: 85vh;
     position: relative;
+    @media (max-width: 600px) {
+        background-position-x: 140%;
+    }
+    @media (max-width: 490px) {
+        background-position-x: 110%;
+    }
+    @media (max-width: 400px) {
+        background-position-x: 100%;
+        height: 100vh;
+    }
 
     hgroup {
         padding: 30px;
@@ -84,7 +105,44 @@ header {
         width: 35%;
         transform: translateY(-50%);
         background: rgba($lightgray,.4);
-        // border-radius: 1em;
+       
+        @media (max-width: 1250px) {
+            padding: 30px;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            transform: translate(-50%,-50%);
+            background: rgba(246, 246, 246, 0.4);
+        }
+
+        @media (max-width: 800px) {
+            padding: 30px;
+            top: 50%;
+            left: 50%;
+            width: 70%;
+            transform: translate(-50%,-50%);
+            background: rgba(246, 246, 246, 0.4);
+        }
+        @media (max-width: 600px) {
+            padding: 30px;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            transform: translate(-50%,-50%);
+            background: rgba(246, 246, 246, 0.4);
+        }
+        @media (max-width: 500px) {
+            padding: 30px;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            transform: translate(-50%,-50%);
+            background: rgba(246, 246, 246, 0.4);
+        }
+        @media (max-width: 400px) {
+            width: 95%;
+        }
+    
 
         h1 {
             font-size: 1.8rem;
@@ -138,7 +196,11 @@ header {
         font-size: 2.3rem;
         // text-align: center;
         padding-bottom: 50px;
+        @media (max-width: 500px) {
+            font-size: 1.7rem;
+        }
     }
+
 
     .item {
         border: 1px solid $borders;
@@ -169,15 +231,24 @@ header {
     background: $primary;
     .container {
          max-width: 800px !important; 
+         @media (max-width: 1000px) {
+            max-width: 80% !important;
+        }
          h1 {
              color: $text;
              font-size: 2rem;
+             @media (max-width: 500px) {
+                 font-size: 1.7rem;
+             }
          }
 
          p {
              color: $white;
              font-size: 1.1rem;
              padding: 30px 0;
+             @media (max-width: 500px) {
+                font-size: 1rem;
+            }
          }
 
          form {
@@ -189,6 +260,18 @@ header {
                 background: transparent;
                 color: $white;
                 border-radius: 10px;
+
+                @media (max-width: 700px) {
+                    width: 250px;
+                }
+
+                @media (max-width: 500px) {
+                    width: 170px;
+                }
+
+                // @media (max-width: 400px) {
+                //     width: 170px;
+                // }
             }
 
             input[type="submit"] {
@@ -200,6 +283,9 @@ header {
                 border-radius: 10px;
                 &:hover {
                     background: $borders;
+                }
+                @media (max-width: 400px) {
+                    padding: 10px 6px;
                 }
             }
          }
@@ -272,6 +358,14 @@ footer {
                 border: 1px solid $primary;
             }
 
+            @media (max-width: 700px) {
+                flex: 0 0 48%;
+            }
+
+            @media (max-width: 400px) {
+                flex: 0 0 100%;
+            }
+
             img {
                 width: 100%;
             }
@@ -299,6 +393,11 @@ footer {
         max-width: 1140px;
         margin: auto;
         padding: 35px 0;
+
+        @media (max-width: 700px) {
+            max-width: 80%;
+            margin: auto;
+        }
     }
 
     .container {
@@ -307,8 +406,12 @@ footer {
         flex-wrap: wrap;
 
         article {
+
             &:first-child {
                 flex: 0 0 40%;
+                @media (max-width: 700px) {
+                    flex: 0 0 100%;
+                }
 
                 img {
                     width: 100%;
@@ -317,6 +420,11 @@ footer {
             &:last-child {
                 flex: 0 0 56%;
                 line-height: 1.8;
+
+                @media (max-width: 700px) {
+                    flex: 0 0 100%;
+                    margin-top: 30px;
+                }
 
                 hr {
                     margin: 40px 0;
@@ -329,6 +437,10 @@ footer {
 
                     p {
                         font-size: 1.2rem;
+
+                        @media (max-width: 400px) {
+                           font-size: 1.1rem;
+                        }
                     }
 
                     a {
@@ -339,6 +451,9 @@ footer {
                         &:hover {
                             transform: rotate(360deg);
                         }
+                        @media (max-width: 400px) {
+                            font-size: 1.8rem;
+                         }
                     }
                 }
             }
@@ -363,6 +478,10 @@ footer {
       max-width: 1140px;
       margin: auto;
       padding: 20px 0;
+      @media (max-width: 700px) {
+        max-width: 80%;
+        margin: auto;
+      }
   }
 
   .container {
@@ -372,11 +491,18 @@ footer {
         
       article {
           flex: 0 0 48%;
+          @media (max-width: 600px) {
+            flex: 0 0 100%;
+            
+        }
           form {
             display: flex;
             flex-direction: column;
              justify-content: center;
             //  align-items: center;
+            @media (max-width: 700px) {
+                margin-top: 30px;
+            }
 
             input[type="text"],textarea {
                 width: 90%;
@@ -411,6 +537,9 @@ footer {
              p {
                  font-size: 1.3rem;
                  margin-right: 15px;
+                 @media (max-width: 430px) {
+                     font-size: 1.1rem  ;
+                 }
              }
              a {
                  font-size: 2rem;
@@ -421,6 +550,9 @@ footer {
                  &:hover {
                      transform: rotateX(360deg);
                  }
+                 @media (max-width: 430px) {
+                    font-size: 1.8rem  ;
+                }
              }
          }
       }
@@ -445,12 +577,18 @@ footer {
         h1 {
             font-size: 2rem;
         }
+
+        @media (max-width: 700px) {
+            max-width: 80%;
+            margin: auto;
+        }
     }
     .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         article {
+            padding: 10px;
             &:first-child {
                 flex: 0 0 38%;
                 border: 1px solid $primary;
@@ -459,6 +597,13 @@ footer {
                 img {
                     width: 100%;
                 }
+                @media (max-width: 900px) {
+                   flex: 0 0 60%;
+                   margin: auto;
+                }
+                @media (max-width: 550px) {
+                    flex: 0 0 100%;
+                 }
             }
 
             &:last-child {
@@ -537,6 +682,15 @@ footer {
                        }
                    }
                }
+                          
+               @media (max-width: 900px) {
+                flex: 0 0 60%;
+                margin: 30px auto;
+             }
+             @media (max-width: 550px) {
+                flex: 0 0 100%;
+             }
+
             }
         }
     }
